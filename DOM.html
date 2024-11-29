@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Methods</title>
+    <link rel="stylesheet" href="DOM.css">
+</head>
+<body>
+    <div class="container">
+        <h1>DOM Methods</h1>
+        
+        <div class="section">
+            <h2>Acceder a elementos</h2>
+            
+            <div class="method-container">
+                <h3>document.getElementById(id)</h3>
+                <button onclick="showExplanation('getElementById')">Show Explanation</button>
+                <p id="getElementById" class="explanation hidden">
+                    Obtiene un elemento por su ID.
+                </p>
+            </div>
+            
+            <div class="method-container">
+                <h3>document.getElementsByClassName(className)</h3>
+                <button onclick="showExplanation('getElementsByClassName')">Show Explanation</button>
+                <p id="getElementsByClassName" class="explanation hidden">
+                    Obtiene una lista de elementos por su clase.
+                </p>
+            </div>
+            
+            <div class="method-container">
+                <h3>document.getElementsByTagName(tagName)</h3>
+                <button onclick="showExplanation('getElementsByTagName')">Show Explanation</button>
+                <p id="getElementsByTagName" class="explanation hidden">
+                    Obtiene una lista de elementos por su etiqueta.
+                </p>
+            </div>
+            
+            <div class="method-container">
+                <h3>document.querySelector(selector)</h3>
+                <button onclick="showExplanation('querySelector')">Show Explanation</button>
+                <p id="querySelector" class="explanation hidden">
+                    Obtiene el primer elemento que coincide con el selector CSS especificado.
+                </p>
+            </div>
+            
+            <div class="method-container">
+                <h3>document.querySelectorAll(selector)</h3>
+                <button onclick="showExplanation('querySelectorAll')">Show Explanation</button>
+                <p id="querySelectorAll" class="explanation hidden">
+                    Obtiene una lista de todos los elementos que coinciden con el selector CSS especificado.
+                </p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Modificar contenido</h2>
+            
+            <div class="method-container">
+                <h3>.innerHTML</h3>
+                <button onclick="showExplanation('innerHTML')">Show Explanation</button>
+                <p id="innerHTML" class="explanation hidden">
+                    Permite obtener o establecer el contenido HTML de un elemento (incluye TAG).
+                </p>
+            </div>
+            
+            <div class="method-container">
+                <h3>.textContent</h3>
+                <button onclick="showExplanation('textContent')">Show Explanation</button>
+                <p id="textContent" class="explanation hidden">
+                    Permite obtener o establecer el contenido de texto de un elemento.
+                </p>
+            </div>
+            
+            <div class="method-container">
+                <h3>.innerText</h3>
+                <button onclick="showExplanation('innerText')">Show Explanation</button>
+                <p id="innerText" class="explanation hidden">
+                    Permite obtener o establecer el contenido de texto de un elemento, sin incluir las etiquetas HTML internas.
+                </p>
+            </div>
+            
+            <div class="method-container">
+                <h3>.outerHTML</h3>
+                <button onclick="showExplanation('outerHTML')">Show Explanation</button>
+                <p id="outerHTML" class="explanation hidden">
+                    Permite obtener o establecer el contenido HTML completo de un elemento, incluyendo el propio elemento.
+                </p>
+            </div>
+        </div>
+    </div>
